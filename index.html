@@ -3,31 +3,102 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Bikram Saha</title>
+    <title>Bikram Saha · AI Developer &amp; Integration Specialist</title>
     <meta
       name="description"
       content="Bikram Saha: AI developer and integration specialist. AI agents, MCP servers, enterprise integrations, and open-source apps like OpenPOS and Wavely."
     />
+    <meta name="author" content="Bikram Saha" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://imbikramsaha.github.io/" />
     <meta name="theme-color" content="#fbfbfa" />
     <meta name="color-scheme" content="light only" />
-    <meta property="og:title" content="Bikram Saha" />
+
+    <!-- Link previews (LinkedIn, WhatsApp, Slack, X) -->
+    <meta property="og:type" content="profile" />
+    <meta property="og:site_name" content="Bikram Saha" />
+    <meta property="og:title" content="Bikram Saha · AI Developer &amp; Integration Specialist" />
     <meta
       property="og:description"
-      content="AI developer and integration specialist. AI agents, MCP servers, enterprise integrations, and open-source apps."
+      content="AI agents, MCP servers, enterprise integrations, and open-source apps like OpenPOS and Wavely."
     />
-    <meta property="og:image" content="https://imbikramsaha.github.io/assets/me_new.png" />
     <meta property="og:url" content="https://imbikramsaha.github.io/" />
+    <meta property="og:image" content="https://imbikramsaha.github.io/assets/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Bikram Saha, AI Developer and Integration Specialist" />
+    <meta property="profile:first_name" content="Bikram" />
+    <meta property="profile:last_name" content="Saha" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Bikram Saha · AI Developer &amp; Integration Specialist" />
+    <meta
+      name="twitter:description"
+      content="AI agents, MCP servers, enterprise integrations, and open-source apps like OpenPOS and Wavely."
+    />
+    <meta name="twitter:image" content="https://imbikramsaha.github.io/assets/og.jpg" />
+
     <link
       rel="icon"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='white'%3EBS%3C/text%3E%3C/svg%3E"
     />
+
+    <!-- Fonts load without blocking the first paint -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..500&display=swap"
+      media="print"
+      onload="this.media='all'"
     />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=JetBrains+Mono:wght@400..500&display=swap"
+      />
+    </noscript>
     <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Structured data: tells search engines who this page is about -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfilePage",
+        "url": "https://imbikramsaha.github.io/",
+        "mainEntity": {
+          "@type": "Person",
+          "name": "Bikram Saha",
+          "url": "https://imbikramsaha.github.io/",
+          "image": "https://imbikramsaha.github.io/assets/me-600.webp",
+          "jobTitle": "AI Developer & Integration Specialist",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "Spikra Private Limited",
+            "url": "https://spikra.com/"
+          },
+          "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Regent Education & Research Foundation"
+          },
+          "knowsAbout": [
+            "Artificial intelligence",
+            "AI agents",
+            "Model Context Protocol",
+            "LLM integration",
+            "Machine learning",
+            "Deep learning",
+            "PyTorch",
+            "Python",
+            "TypeScript"
+          ],
+          "sameAs": [
+            "https://github.com/imbikramsaha",
+            "https://www.linkedin.com/in/imbikramsaha/",
+            "https://www.kaggle.com/imbikramsaha"
+          ]
+        }
+      }
+    </script>
     <script>
       document.documentElement.classList.add("js");
     </script>
@@ -84,14 +155,24 @@
 
     <header id="dhead" class="container">
       <div class="row">
-        <div id="dpic" class="rise" style="--d: 0">
+        <div id="dpic">
           <div class="pwrap">
-            <img src="assets/me_new.png" class="ppic" alt="Portrait of Bikram Saha" />
+            <img
+              src="assets/me-600.webp"
+              srcset="assets/me-360.webp 360w, assets/me-600.webp 600w"
+              sizes="(max-width: 720px) 176px, 300px"
+              width="600"
+              height="600"
+              fetchpriority="high"
+              decoding="async"
+              class="ppic"
+              alt="Portrait of Bikram Saha"
+            />
           </div>
         </div>
         <div id="ddesc">
-          <h1 class="rise" style="--d: 1">Bikram Saha</h1>
-          <h2 class="rise" style="--d: 2">
+          <h1>Bikram Saha</h1>
+          <p class="tagline">
             I like taking AI out of the demo and putting it to
             <span class="hl" style="--h: 0">real work</span>, connecting
             language models to the systems businesses already run on. In my own
@@ -99,8 +180,8 @@
             apps</span> and train neural nets
             <span class="hl" style="--h: 2">from scratch</span>, mostly to
             understand how they really work.
-          </h2>
-          <nav id="dico" class="rise" style="--d: 3" aria-label="Profiles and contact">
+          </p>
+          <nav id="dico" class="rise" style="--d: 1" aria-label="Profiles and contact">
             <a class="btn" href="https://github.com/imbikramsaha" target="_blank" rel="noopener">
               <svg class="i"><use href="#i-github" /></svg>GitHub
             </a>
@@ -137,18 +218,18 @@
       <section id="history" class="container">
         <div class="reveal">
           <p class="eyebrow">Journey</p>
-          <h3 class="ctitle">Experience &amp; Education</h3>
+          <h2 class="ctitle">Experience &amp; Education</h2>
         </div>
 
         <div class="entry row reveal">
           <div class="timespan">Jul 2025<br />Present</div>
           <div class="ico">
             <div class="entry-dot is-current"></div>
-            <img src="assets/spikra.svg" alt="Spikra logo" />
+            <img src="assets/spikra.svg" alt="Spikra logo" width="42" height="42" loading="lazy" />
           </div>
           <div class="desc">
             <div class="ewhen">Jul 2025 – Present</div>
-            <div class="etitle">AI Developer &amp; Integration Specialist</div>
+            <h3 class="etitle">AI Developer &amp; Integration Specialist</h3>
             <div class="eorg">Spikra Private Limited</div>
             <p>
               At Spikra, I design and ship AI systems for enterprise clients,
@@ -174,11 +255,11 @@
           <div class="timespan">2021<br />2025</div>
           <div class="ico">
             <div class="entry-dot"></div>
-            <img src="assets/makaut.png" alt="MAKAUT logo" />
+            <img src="assets/makaut.png" alt="MAKAUT logo" width="42" height="42" loading="lazy" />
           </div>
           <div class="desc">
             <div class="ewhen">2021 – 2025</div>
-            <div class="etitle">B.Tech, Computer Science &amp; Engineering</div>
+            <h3 class="etitle">B.Tech, Computer Science &amp; Engineering</h3>
             <div class="eorg">
               Regent Education &amp; Research Foundation (MAKAUT) ·
               CGPA 8.19
@@ -195,16 +276,16 @@
       <section id="pet-projects" class="container">
         <div class="reveal">
           <p class="eyebrow">Things I've built</p>
-          <h3 class="ctitle">My Projects</h3>
+          <h2 class="ctitle">My Projects</h2>
         </div>
 
         <div class="pgrid">
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/openpos.png" alt="OpenPOS app icon" loading="lazy" /></div>
+              <div class="pico"><img src="assets/openpos-144.webp" alt="OpenPOS app icon" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://imbikramsaha.github.io/openpos/" target="_blank" rel="noopener">OpenPOS</a>
+                  <h3 class="pname"><a class="ptitle" href="https://imbikramsaha.github.io/openpos/" target="_blank" rel="noopener">OpenPOS</a></h3>
                   <span class="badge">New</span>
                 </div>
                 <span class="psub">Free, offline-first point of sale</span>
@@ -237,10 +318,10 @@
 
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/wavely.png" alt="Wavely app icon" loading="lazy" /></div>
+              <div class="pico"><img src="assets/wavely-144.webp" alt="Wavely app icon" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://imbikramsaha.github.io/Wavely/" target="_blank" rel="noopener">Wavely</a>
+                  <h3 class="pname"><a class="ptitle" href="https://imbikramsaha.github.io/Wavely/" target="_blank" rel="noopener">Wavely</a></h3>
                   <span class="badge">New</span>
                 </div>
                 <span class="psub">Calm, minimal offline music player for Android</span>
@@ -269,10 +350,10 @@
 
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/babygpt.jpg" alt="babyGPT thumbnail" loading="lazy" /></div>
+              <div class="pico"><img src="assets/babygpt-144.webp" alt="babyGPT thumbnail" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/babygpt-a-275m-params-micro-llm" target="_blank" rel="noopener">babyGPT</a>
+                  <h3 class="pname"><a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/babygpt-a-275m-params-micro-llm" target="_blank" rel="noopener">babyGPT</a></h3>
                 </div>
                 <span class="psub">275M-parameter LLM built from scratch</span>
               </div>
@@ -298,10 +379,10 @@
 
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/irctc.jpg" alt="IRCTC thumbnail" loading="lazy" /></div>
+              <div class="pico"><img src="assets/irctc-144.webp" alt="IRCTC thumbnail" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://github.com/imbikramsaha/IRCTC-Ticket-Booking" target="_blank" rel="noopener">IRCTC Backend Service</a>
+                  <h3 class="pname"><a class="ptitle" href="https://github.com/imbikramsaha/IRCTC-Ticket-Booking" target="_blank" rel="noopener">IRCTC Backend Service</a></h3>
                 </div>
                 <span class="psub">Train ticket booking backend in core Java</span>
               </div>
@@ -327,10 +408,10 @@
 
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/walmart.jpeg" alt="Walmart thumbnail" loading="lazy" /></div>
+              <div class="pico"><img src="assets/walmart-144.webp" alt="Walmart thumbnail" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://github.com/imbikramsaha/Walmart-Sales-Analysis-and-Prediction" target="_blank" rel="noopener">Walmart Sales Data Analysis</a>
+                  <h3 class="pname"><a class="ptitle" href="https://github.com/imbikramsaha/Walmart-Sales-Analysis-and-Prediction" target="_blank" rel="noopener">Walmart Sales Data Analysis</a></h3>
                 </div>
                 <span class="psub">End-to-end sales forecasting pipeline</span>
               </div>
@@ -357,10 +438,10 @@
 
           <article class="project reveal">
             <div class="ptop">
-              <div class="pico"><img src="assets/paddy.jpg" alt="Paddy leaf thumbnail" loading="lazy" /></div>
+              <div class="pico"><img src="assets/paddy-144.webp" alt="Paddy leaf thumbnail" width="72" height="72" loading="lazy" decoding="async" /></div>
               <div class="phead">
                 <div class="ptitle-row">
-                  <a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/paddy-disease-classification-with-98-15-accuracy" target="_blank" rel="noopener">Paddy Disease Classification</a>
+                  <h3 class="pname"><a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/paddy-disease-classification-with-98-15-accuracy" target="_blank" rel="noopener">Paddy Disease Classification</a></h3>
                 </div>
                 <span class="psub">Vision Transformer, 98.15% accuracy</span>
               </div>
@@ -389,7 +470,7 @@
     <footer class="container">
       <div class="cta reveal">
         <div>
-          <h3>Let's build something.</h3>
+          <h2>Let's build something.</h2>
           <p>Want to talk AI, integrations or one of my projects? Drop me a line.</p>
         </div>
         <a class="btn btn-primary" href="mailto:imbikramsaha@gmail.com">
@@ -447,6 +528,7 @@
           bar.style.transform = "scaleX(" + (max > 0 ? h.scrollTop / max : 0) + ")";
           queued = false;
         }
+        // first update waits for a frame so it doesn't force a layout during load
         window.addEventListener(
           "scroll",
           function () {
@@ -457,7 +539,7 @@
           },
           { passive: true }
         );
-        update();
+        requestAnimationFrame(update);
       })();
     </script>
   </body>
