@@ -2,174 +2,463 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bikram Saha</title>
+    <meta
+      name="description"
+      content="Bikram Saha: AI developer and integration specialist. AI agents, MCP servers, enterprise integrations, and open-source apps like OpenPOS and Wavely."
+    />
+    <meta name="theme-color" content="#fbfbfa" />
+    <meta name="color-scheme" content="light only" />
+    <meta property="og:title" content="Bikram Saha" />
+    <meta
+      property="og:description"
+      content="AI developer and integration specialist. AI agents, MCP servers, enterprise integrations, and open-source apps."
+    />
+    <meta property="og:image" content="https://imbikramsaha.github.io/assets/me_new.png" />
+    <meta property="og:url" content="https://imbikramsaha.github.io/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%234f46e5'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,sans-serif' font-weight='700' font-size='30' fill='white'%3EBS%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="style.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body>
-    <div id="dhead" class="container">
+    <div class="progress" aria-hidden="true"></div>
+
+    <!-- Animated background behind the header -->
+    <div class="aurora" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="blob b3"></span>
+    </div>
+
+    <!-- Icon sprite -->
+    <svg width="0" height="0" style="position: absolute" aria-hidden="true">
+      <symbol id="i-github" viewBox="0 0 16 16">
+        <path
+          fill="currentColor"
+          d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+        />
+      </symbol>
+      <symbol id="i-kaggle" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M18.825 23.859c-.022.092-.117.141-.281.141h-3.139c-.187 0-.351-.082-.492-.248l-5.178-6.589-1.448 1.374v5.111c0 .235-.117.352-.351.352H5.505c-.236 0-.354-.117-.354-.352V.353c0-.233.118-.353.354-.353h2.431c.234 0 .351.12.351.353v14.343l6.203-6.272c.165-.165.33-.246.495-.246h3.239c.144 0 .236.06.285.18.046.149.034.255-.036.315l-6.555 6.344 6.836 8.507c.095.104.117.208.07.358"
+        />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path
+          fill="currentColor"
+          d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 1 1 0-4.125 2.062 2.062 0 0 1 0 4.125zM7.119 20.452H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+        />
+      </symbol>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="2" y="4" width="20" height="16" rx="2" />
+          <path d="m22 7-10 6L2 7" />
+        </g>
+      </symbol>
+      <symbol id="i-file" viewBox="0 0 24 24">
+        <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+          <path d="M14 2v6h6M16 13H8M16 17H8M10 9H8" />
+        </g>
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M7 17 17 7M8 7h9v9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      </symbol>
+    </svg>
+
+    <header id="dhead" class="container">
       <div class="row">
-        <div id="dpic">
-          <img src="assets/me_new.jpg" class="ppic" />
-        </div>
-        <div id="ddesc">
-          <h1>Bikram Saha</h1>
-          <h2>
-            I enjoy exploring the realms of Machine Learning and Deep Learning,
-            and training deep neural nets. I also love building backends with
-            Java.🔬💻💡
-          </h2>
-          <div id="dico">
-            <a href="https://github.com/imbikramsaha" target="_blank">GitHub</a>
-            &nbsp;
-            <a href="https://kaggle.com/imbikramsaha" target="_blank">Kaggle</a>
-            &nbsp;
-            <a href="https://linkedin.com/in/imbikramsaha" target="_blank"
-              >LinkedIn</a
-            >
-            &nbsp;
-            <a href="mailto:imbikramsaha@gmail.com">Email</a>
-            &nbsp;
-            <a
-              href="https://drive.google.com/file/d/1SNurifrMINOkD4GVEa2pqCP5w8tASjyO/view?usp=sharing"
-              target="_blank"
-              >Resume</a
-            >
+        <div id="dpic" class="rise" style="--d: 0">
+          <div class="pwrap">
+            <img src="assets/me_new.png" class="ppic" alt="Portrait of Bikram Saha" />
           </div>
         </div>
+        <div id="ddesc">
+          <h1 class="rise" style="--d: 1">Bikram Saha</h1>
+          <h2 class="rise" style="--d: 2">
+            I like taking AI out of the demo and putting it to
+            <span class="hl" style="--h: 0">real work</span>, connecting
+            language models to the systems businesses already run on. In my own
+            time, I build free <span class="hl" style="--h: 1">open-source
+            apps</span> and train neural nets
+            <span class="hl" style="--h: 2">from scratch</span>, mostly to
+            understand how they really work.
+          </h2>
+          <nav id="dico" class="rise" style="--d: 3" aria-label="Profiles and contact">
+            <a class="btn" href="https://github.com/imbikramsaha" target="_blank" rel="noopener">
+              <svg class="i"><use href="#i-github" /></svg>GitHub
+            </a>
+            <a class="btn" href="https://kaggle.com/imbikramsaha" target="_blank" rel="noopener">
+              <svg class="i"><use href="#i-kaggle" /></svg>Kaggle
+            </a>
+            <a class="btn" href="https://linkedin.com/in/imbikramsaha" target="_blank" rel="noopener">
+              <svg class="i"><use href="#i-linkedin" /></svg>LinkedIn
+            </a>
+            <a class="btn" href="mailto:imbikramsaha@gmail.com">
+              <svg class="i"><use href="#i-mail" /></svg>Email
+            </a>
+            <!-- ################################################################
+                 ##########   TODO: REPLACE RESUME LINK   ##########
+                 ##  The href below still points to the OLD resume PDF on
+                 ##  Google Drive. Replace it with your latest resume link.
+                 ################################################################ -->
+            <a
+              class="btn btn-primary"
+              href="https://drive.google.com/file/d/1SNurifrMINOkD4GVEa2pqCP5w8tASjyO/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+            >
+              <svg class="i"><use href="#i-file" /></svg>Resume
+            </a>
+          </nav>
+        </div>
       </div>
-    </div>
+    </header>
 
     <hr />
 
-    <div id="history" class="container">
-      <div class="entry row">
-        <div class="timespan">2021 - 2025</div>
-        <div class="ico">
-          <div class="entry-dot"></div>
-          <img src="assets/makaut.png" style="max-width: 35px" />
+    <main>
+      <section id="history" class="container">
+        <div class="reveal">
+          <p class="eyebrow">Journey</p>
+          <h3 class="ctitle">Experience &amp; Education</h3>
         </div>
-        <div class="desc">
-          B.Tech at the MAKAUT University in Computer Science and Engineering.
-          During my studies, I focused on core areas like programming, data
-          structures, and software development, and worked on practical projects
-          to strengthen my skills.
+
+        <div class="entry row reveal">
+          <div class="timespan">Jul 2025<br />Present</div>
+          <div class="ico">
+            <div class="entry-dot is-current"></div>
+            <img src="assets/spikra.svg" alt="Spikra logo" />
+          </div>
+          <div class="desc">
+            <div class="ewhen">Jul 2025 – Present</div>
+            <div class="etitle">AI Developer &amp; Integration Specialist</div>
+            <div class="eorg">Spikra Private Limited</div>
+            <p>
+              At Spikra, I design and ship AI systems for enterprise clients,
+              from AI agents and custom MCP servers to large-scale data
+              migrations, and own client engagements end to end. I also built
+              <a href="http://chat.briha.ai" target="_blank" rel="noopener">chat.briha.ai</a>,
+              our private AI chat platform, helped the team adopt AI-assisted
+              delivery, and led Spikra's Stanford Seed program.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>AWS</li>
+              <li>Zoho Catalyst</li>
+              <li>REST APIs</li>
+              <li>MCP</li>
+              <li>LLM APIs</li>
+              <li>Rasa</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="entry row reveal">
+          <div class="timespan">2021<br />2025</div>
+          <div class="ico">
+            <div class="entry-dot"></div>
+            <img src="assets/makaut.png" alt="MAKAUT logo" />
+          </div>
+          <div class="desc">
+            <div class="ewhen">2021 – 2025</div>
+            <div class="etitle">B.Tech, Computer Science &amp; Engineering</div>
+            <div class="eorg">
+              Regent Education &amp; Research Foundation (MAKAUT) ·
+              CGPA 8.19
+            </div>
+            <p>
+              Focused on core areas like programming, data structures and
+              software development, and worked on practical projects in machine
+              learning and backend engineering to strengthen my skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="pet-projects" class="container">
+        <div class="reveal">
+          <p class="eyebrow">Things I've built</p>
+          <h3 class="ctitle">My Projects</h3>
+        </div>
+
+        <div class="pgrid">
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/openpos.png" alt="OpenPOS app icon" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://imbikramsaha.github.io/openpos/" target="_blank" rel="noopener">OpenPOS</a>
+                  <span class="badge">New</span>
+                </div>
+                <span class="psub">Free, offline-first point of sale</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              An open-source (MIT) point of sale for small shops, cafés and
+              restaurants, with billing, inventory, customer credit (khata),
+              GST invoicing and reports in <strong>34 languages</strong>. Every
+              till keeps a full local database, so it keeps selling when the
+              internet drops and syncs across tills when it's back. One
+              TypeScript codebase ships to <strong>Windows, macOS, Linux,
+              Android, iOS and the web</strong>.
+            </div>
+            <ul class="tags">
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Electron</li>
+              <li>Capacitor</li>
+              <li>IndexedDB (Dexie)</li>
+              <li>Node.js</li>
+              <li>SQLite</li>
+              <li>GitHub Actions</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://imbikramsaha.github.io/openpos/" target="_blank" rel="noopener"><svg class="i"><use href="#i-arrow" /></svg>Website</a>
+              <a href="https://github.com/imbikramsaha/openpos" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>Source</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/wavely.png" alt="Wavely app icon" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://imbikramsaha.github.io/Wavely/" target="_blank" rel="noopener">Wavely</a>
+                  <span class="badge">New</span>
+                </div>
+                <span class="psub">Calm, minimal offline music player for Android</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              A music player for the songs already on your phone:
+              <strong>no account, no ads, no tracking and no internet
+              permission</strong>. Background playback with lock-screen
+              controls, a drag-to-reorder queue, playlists and favorites, a
+              sleep timer, playback speed, and light, dark and Material You
+              themes, with layouts for tablets and landscape.
+            </div>
+            <ul class="tags">
+              <li>Kotlin</li>
+              <li>Jetpack Compose</li>
+              <li>Material 3</li>
+              <li>Media3 ExoPlayer</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://imbikramsaha.github.io/Wavely/" target="_blank" rel="noopener"><svg class="i"><use href="#i-arrow" /></svg>Website</a>
+              <a href="https://github.com/imbikramsaha/Wavely" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>Source</a>
+              <a href="https://github.com/imbikramsaha/Wavely/releases/latest" target="_blank" rel="noopener"><svg class="i"><use href="#i-download" /></svg>Download APK</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/babygpt.jpg" alt="babyGPT thumbnail" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/babygpt-a-275m-params-micro-llm" target="_blank" rel="noopener">babyGPT</a>
+                </div>
+                <span class="psub">275M-parameter LLM built from scratch</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              A GPT-style transformer with <strong>275 million</strong>
+              parameters, <strong>16 layers</strong>, <strong>12 attention
+              heads</strong> and 960-dim embeddings, written from scratch in
+              PyTorch. Multi-head self-attention, feed-forward layers, layer
+              normalization and positional encoding are all implemented by
+              hand. Trained on Wikitext-8 with AdamW for 15,000+ iterations,
+              with steady train and validation loss reduction.
+            </div>
+            <ul class="tags">
+              <li>Python</li>
+              <li>PyTorch</li>
+              <li>Tiktoken</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://www.kaggle.com/code/imbikramsaha/babygpt-a-275m-params-micro-llm" target="_blank" rel="noopener"><svg class="i"><use href="#i-kaggle" /></svg>Kaggle notebook</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/irctc.jpg" alt="IRCTC thumbnail" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://github.com/imbikramsaha/IRCTC-Ticket-Booking" target="_blank" rel="noopener">IRCTC Backend Service</a>
+                </div>
+                <span class="psub">Train ticket booking backend in core Java</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              A Java backend that automates IRCTC train ticket booking
+              workflows: booking, cancellation, seat availability tracking and
+              session management. Built with <strong>core Java</strong> and a
+              lightweight <strong>LocalDB</strong> instead of an external
+              database, with custom data models for real-time seat allocation
+              and a modular, <strong>object-oriented design</strong> ready to
+              grow into a RESTful service.
+            </div>
+            <ul class="tags">
+              <li>Java</li>
+              <li>OOP</li>
+              <li>LocalDB</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://github.com/imbikramsaha/IRCTC-Ticket-Booking" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>Source</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/walmart.jpeg" alt="Walmart thumbnail" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://github.com/imbikramsaha/Walmart-Sales-Analysis-and-Prediction" target="_blank" rel="noopener">Walmart Sales Data Analysis</a>
+                </div>
+                <span class="psub">End-to-end sales forecasting pipeline</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              Forecasts Walmart sales from real-world time-series data.
+              Preprocessing handles missing values and engineers holiday flags
+              and rolling averages, and EDA surfaces store- and
+              department-level trends and seasonality.
+              <strong>Random Forest</strong> and <strong>XGBoost</strong> models
+              are tuned with cross-validation and evaluated on RMSE and MAPE
+              for robust short-term predictions.
+            </div>
+            <ul class="tags">
+              <li>Python</li>
+              <li>Random Forest</li>
+              <li>XGBoost</li>
+              <li>Time series</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://github.com/imbikramsaha/Walmart-Sales-Analysis-and-Prediction" target="_blank" rel="noopener"><svg class="i"><use href="#i-github" /></svg>Source</a>
+            </div>
+          </article>
+
+          <article class="project reveal">
+            <div class="ptop">
+              <div class="pico"><img src="assets/paddy.jpg" alt="Paddy leaf thumbnail" loading="lazy" /></div>
+              <div class="phead">
+                <div class="ptitle-row">
+                  <a class="ptitle" href="https://www.kaggle.com/code/imbikramsaha/paddy-disease-classification-with-98-15-accuracy" target="_blank" rel="noopener">Paddy Disease Classification</a>
+                </div>
+                <span class="psub">Vision Transformer, 98.15% accuracy</span>
+              </div>
+            </div>
+            <div class="pdesc">
+              A fine-tuned Vision Transformer (ViT-Large-Patch16-224) that
+              classifies paddy leaf diseases across 10 categories. Trained in
+              PyTorch with AdamW and cross-entropy loss, using random crops,
+              affine augmentations and ImageNet normalization, it reached
+              <strong>98.15% accuracy</strong> on the Kaggle competition test
+              set.
+            </div>
+            <ul class="tags">
+              <li>PyTorch</li>
+              <li>Vision Transformer</li>
+              <li>Computer vision</li>
+            </ul>
+            <div class="plinks">
+              <a href="https://www.kaggle.com/code/imbikramsaha/paddy-disease-classification-with-98-15-accuracy" target="_blank" rel="noopener"><svg class="i"><use href="#i-kaggle" /></svg>Kaggle notebook</a>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container">
+      <div class="cta reveal">
+        <div>
+          <h3>Let's build something.</h3>
+          <p>Want to talk AI, integrations or one of my projects? Drop me a line.</p>
+        </div>
+        <a class="btn btn-primary" href="mailto:imbikramsaha@gmail.com">
+          <svg class="i"><use href="#i-mail" /></svg>Say hello
+        </a>
       </div>
-    </div>
-
-    <div id="pet-projects" class="container">
-      <div class="ctitle">My Projects</div>
-
-      <div class="project">
-        <div class="pico"><img src="assets/babygpt.jpg" /></div>
-        <div class="pdesc">
-          <a
-            href="https://www.kaggle.com/code/imbikramsaha/babygpt-a-275m-params-micro-llm"
-            target="_blank"
-            >babyGPT</a
-          >&nbsp;is a transformer-based language model built from scratch using
-          PyTorch, featuring <b>275 million</b> parameters with
-          <b>16 layers</b> and <b>12 attention heads</b>. Trained on the
-          Wikitext-8 dataset, it includes a custom tokenizer and employs the
-          AdamW optimizer for improved convergence. The model incorporates core
-          components like multi-head self-attention, feedforward layers, layer
-          normalization, and positional encoding, all implemented manually.
-          After over 15,000 iterations, it showed steady loss reduction,
-          indicating successful learning. Teengpt provided deep insight into
-          large language model design, training, and optimization, and reflects
-          my passion for AI and hands-on expertise in deep learning
-          architecture.
-        </div>
-        <div class="pend"></div>
+      <div class="foot">
+        <span>© 2026 Bikram Saha</span>
+        <span class="foot-links">
+          <a href="https://github.com/imbikramsaha" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://kaggle.com/imbikramsaha" target="_blank" rel="noopener">Kaggle</a>
+          <a href="https://linkedin.com/in/imbikramsaha" target="_blank" rel="noopener">LinkedIn</a>
+        </span>
       </div>
+    </footer>
 
-      <div class="project">
-        <div class="pico"><img src="assets/irctc.jpg" /></div>
-        <div class="pdesc">
-          <a
-            href="https://github.com/imbikramsaha/IRCTC-Ticket-Booking"
-            target="_blank"
-            >IRCTC - Backend Service</a
-          >&nbsp;Java-based backend service designed to automate IRCTC train
-          ticket booking workflows, built using <b>core Java</b> and a
-          lightweight <b>LocalDB</b> setup. The system implements modules for
-          ticket booking, cancellation, seat availability tracking, and session
-          management without relying on external database systems, enabling
-          faster local data access and reduced overhead. It features custom data
-          models and logic to manage real-time seat allocations and
-          cancellations efficiently. The application follows a modular and
-          <b>object-oriented design</b>, optimizing performance for
-          single-machine deployments and enabling future scalability toward
-          networked or RESTful implementations.
-        </div>
-        <div class="pend"></div>
-      </div>
+    <script>
+      (function () {
+        var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-      <div class="project">
-        <div class="pico"><img src="assets/walmart.jpeg" /></div>
-        <div class="pdesc">
-          <a
-            href="https://github.com/imbikramsaha/Walmart-Sales-Analysis-and-Prediction"
-            target="_blank"
-            >Walmart Sales Data Analysis</a
-          >
-          &nbsp;end-to-end pipeline is developed for Walmart sales forecasting
-          using real-world time-series data. The dataset is preprocessed to
-          handle missing values, convert date features, and engineer variables
-          such as holiday flags and rolling averages. Exploratory Data Analysis
-          (EDA) is performed to uncover store-wise and department-level sales
-          trends, seasonality, and anomalies. Machine learning models including
-          <b>Random Forest Regressor</b> and
-          <b>XGBoost</b>
-          are trained on historical data with hyperparameter tuning and
-          cross-validation. Feature importance analysis highlights the impact of
-          temporal and event-based variables. The final models are evaluated
-          using RMSE and MAPE, delivering robust short-term sales predictions
-          for operational optimization.
-        </div>
-        <div class="pend"></div>
-      </div>
+        // Reveal sections as they scroll into view
+        var els = document.querySelectorAll(".reveal");
+        if (reduce || !("IntersectionObserver" in window)) {
+          els.forEach(function (el) { el.classList.add("in"); });
+        } else {
+          var io = new IntersectionObserver(
+            function (entries) {
+              entries.forEach(function (e) {
+                if (e.isIntersecting) {
+                  e.target.classList.add("in");
+                  io.unobserve(e.target);
+                }
+              });
+            },
+            { threshold: 0.12, rootMargin: "0px 0px -40px 0px" }
+          );
+          els.forEach(function (el) { io.observe(el); });
+        }
 
-      <div class="project">
-        <div class="pico"><img src="assets/paddy.jpg" /></div>
-        <div class="pdesc">
-          <a
-            href="https://www.kaggle.com/code/imbikramsaha/paddy-disease-classification-with-98-15-accuracy"
-            target="_blank"
-            >Paddy Disease Classification</a
-          >
-          &nbsp;A Vision Transformer (ViT-Large-Patch16-224) model is fine-tuned
-          to classify paddy leaf diseases across 10 distinct categories using
-          high-resolution agricultural imagery. The workflow includes rigorous
-          data preprocessing: resizing to 224x224 pixels, random cropping,
-          affine transformations, and normalization based on ImageNet stats.
-          Training is conducted in PyTorch with the AdamW optimizer and
-          cross-entropy loss. Careful tuning and augmentation strategies help
-          the model generalize well, achieving <b>98.15% accuracy</b> on the
-          Kaggle competition test set. Evaluation includes per-class metrics and
-          confusion matrix analysis, demonstrating the viability of
-          transformer-based architectures in real-world plant disease
-          classification and precision agriculture.
-        </div>
-        <div class="pend"></div>
-      </div>
+        // Spotlight that follows the cursor on project cards
+        document.querySelectorAll(".project").forEach(function (card) {
+          card.addEventListener("pointermove", function (ev) {
+            var r = card.getBoundingClientRect();
+            card.style.setProperty("--mx", ev.clientX - r.left + "px");
+            card.style.setProperty("--my", ev.clientY - r.top + "px");
+          });
+        });
 
-      <!-- <div class="project">
-        <div class="pico"><img src="assets/image.jpg" /></div>
-        <a href="https://github.com/imbikramsaha/repo" target="_blank">Lorem, ipsum dolor.</a>
-        <div class="pdesc">
-          &nbsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium
-          autem nobis alias. Neque libero totam voluptatum a! Cum quae eligendi
-          non recusandae possimus, placeat magni molestiae? Modi iure explicabo
-          adipisci.
-        </div>
-        <div class="pend"></div>
-      </div> -->
-    </div>
-    <br /><br /><br /><br /><br /><br />
+        // Scroll progress bar
+        var bar = document.querySelector(".progress");
+        var queued = false;
+        function update() {
+          var h = document.documentElement;
+          var max = h.scrollHeight - h.clientHeight;
+          bar.style.transform = "scaleX(" + (max > 0 ? h.scrollTop / max : 0) + ")";
+          queued = false;
+        }
+        window.addEventListener(
+          "scroll",
+          function () {
+            if (!queued) {
+              queued = true;
+              requestAnimationFrame(update);
+            }
+          },
+          { passive: true }
+        );
+        update();
+      })();
+    </script>
   </body>
 </html>
